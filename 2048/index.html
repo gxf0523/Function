@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="hahaha" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="2048"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="support.js"></script>
+    <script src="gamePlay.js"></script>
+    <script src="control.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+<div class="game">
+    <div>
+        <header>
+            <p>贰 零 肆 捌</p>
+        </header>
+        <button class="buttons" id="newGame" onclick="newGame()">
+            New Game
+        </button>
+    </div>
+    <div id="score">
+        !score!
+    </div>
+    <div class="gamePlatform">
+        <div class="gamePlace" id="gamePlace_0_0">
+        </div>
+        <div class="gamePlace" id="gamePlace_0_1">2
+        </div>
+        <div class="gamePlace" id="gamePlace_0_2">4
+        </div>
+        <div class="gamePlace" id="gamePlace_0_3">8
+        </div>
+        <div class="gamePlace" id="gamePlace_1_0">16
+        </div>
+        <div class="gamePlace" id="gamePlace_1_1">32
+        </div>
+        <div class="gamePlace" id="gamePlace_1_2">64
+        </div>
+        <div class="gamePlace" id="gamePlace_1_3">128
+        </div>
+        <div class="gamePlace" id="gamePlace_2_0">256
+        </div>
+        <div class="gamePlace" id="gamePlace_2_1">512
+        </div>
+        <div class="gamePlace" id="gamePlace_2_2">1024
+        </div>
+        <div class="gamePlace" id="gamePlace_2_3">2048
+        </div>
+        <div class="gamePlace" id="gamePlace_3_0">4096
+        </div>
+        <div class="gamePlace" id="gamePlace_3_1">8192
+        </div>
+        <div class="gamePlace" id="gamePlace_3_2">#14
+        </div>
+        <div class="gamePlace" id="gamePlace_3_3">#15
+        </div>
+    </div>
+    <script>
+        changeColor()
+    </script>
+    <div class="gameOver" id="gameOver">
+        !G!A!M!E!&nbsp; &nbsp; &nbsp;!O!V!E!R!
+    </div>
+    <div class="gameOver" id="toStart">
+        <p>使用键盘上下左右或右下控制盘控制</p>
+        <button class="buttons" id="start" onclick="start()">
+            开始游戏
+        </button>
+    </div>
+    <div class="gameOver" id="name">
+        <p id="toName">为自己取名{小于8个字符)</p>
+        <label>
+            <input type="text" id="nameLine" placeholder="unnamed">
+        </label>
+        <button class="buttons" id="nameOk" onclick="nameCheck()">
+            就这个名字了
+        </button>
+    </div>
+    <div class="controlEr" id="controlEr">
+        <div class="controlButton" id="up" onmousedown="upKeyDown()" onmouseup="upKeyUp()">
+            ▲
+        </div>
+        <div class="controlButton" id="left" onmousedown="leftKeyDown()" onmouseup="leftKeyUp()">
+            ◀
+        </div>
+        <div class="controlButton" id="down" onmousedown="downKeyDown()" onmouseup="downKeyUp()">
+            ▼
+        </div>
+        <div class="controlButton" id="right" onmousedown="rightKeyDown()" onmouseup="rightKeyUp()">
+            ▶
+        </div>
+    </div>
+
+</div>
+<div class="name">
+    <div id="nameRightNow">
+        当前使用id：unnamed
+    </div>
+    <div>
+        <button id="reName" class="buttons" onclick="rename()">
+            重新命名
+        </button>
+    </div>
+</div>
+<div class="sideWindow">
+    <div class="windowTitle">
+        历史分数
+    </div>
+    <div id="history">
+
+    </div>
+</div>
+<div class="sideWindow_2">
+    <div class="windowTitle">
+        排行榜
+    </div>
+    <div id="topPlayer">
+        <div id="top1">
+
+        </div>
+        <div id="top2">
+
+        </div>
+        <div id="top3">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

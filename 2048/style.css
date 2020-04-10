@@ -1,0 +1,201 @@
+header{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 楷体, fantasy;
+}
+
+.game{
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%,0);
+    background: rosybrown;
+    width: 480px;
+    height: 650px;
+}
+
+
+
+.gamePlatform{
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    padding: 10px;
+    border-radius: 3em;
+    transform: translate(-50%,0);
+    background: bisque;
+    width: 400px;
+    height: 400px;
+}
+
+.gamePlace{
+    float: left;
+    position: relative;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 2em;
+    background: aliceblue;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 汉仪乐喵体简, serif;
+    line-height: 80px;
+}
+
+.gameOver{
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    width: 250px;
+    height: 150px;
+    border-radius: 0.5em;
+    transform: translate(-50%,0);
+    background: darkgray;
+    filter:alpha(Opacity=60);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    line-height: 150px;
+    text-align: center;
+}
+
+.buttons{
+    float: contour;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 5px;
+    border-radius: 1em;
+}
+
+.controlEr{
+    font-size: xx-large;
+    float: right;
+    position: absolute;
+    top: 500px;
+    right: -25%;
+}
+
+.controlButton{
+    float: left;
+    position: absolute;
+    color: #e5b49a;
+    text-shadow:2px 2px #655d60;
+}
+
+.sideWindow{
+    width: 400px;
+    height: 300px;
+    float: left;
+    position: absolute;
+    background: #ececec;
+    filter: alpha(opacity=80);
+    opacity: 0.5;
+    border: 1.5px #655d60 solid;
+    left: 3%;
+    top: 50px;
+    overflow: scroll;
+}
+
+.sideWindow_2{
+    width: 400px;
+    height: 90px;
+    float: left;
+    position: absolute;
+    background: #ececec;
+    filter: alpha(opacity=80);
+    opacity: 0.5;
+    border: 1.5px #655d60 solid;
+    left: 3%;
+    top: 400px;
+}
+
+.windowTitle{
+    background: #655d60;
+    text-align: center;
+}
+
+.name{
+    float: right;
+    position: absolute;
+    right: 2%;
+    top: 20px;
+}
+
+#score{
+    text-align: center;
+    font-size: x-large;
+    font-family: 黑体, monospace;
+}
+
+#gameOver{
+    display: none;
+}
+
+#toStart{
+    display: inline;
+    line-height: 30px;
+}
+
+#start{
+    filter:alpha(Opacity=100);
+    -moz-opacity:1;
+    opacity: 1;
+    left: 17%;
+}
+
+#name{
+    filter:alpha(Opacity=100);
+    -moz-opacity:1;
+    opacity: 1;
+    line-height: 20px;
+}
+
+#controlEr{
+    height: 94px;
+    width: 94px;
+    background: #fcfcda;
+    border-radius: 47px;
+}
+
+#up{
+    top: -4px;
+    left: 30px;
+}
+
+#down{
+    top: 56px;
+    left: 30px;
+}
+
+#left{
+    top: 26px;
+    left: 0;
+}
+
+#right{
+    top: 26px;
+    left: 60px;
+}
+
+#score{
+    float: right;
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    transform: translate(50%,0);
+}
+
+#history{
+    overflow: hidden;
+}
+
+#nameOk{
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50% 0);
+}

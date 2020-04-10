@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>实现下拉框多选功能</title>
+  <link rel="stylesheet" href="docs/css/bootstrap-3.3.2.min.css" rel="external nofollow" type="text/css">
+  <link rel="stylesheet" href="docs/css/bootstrap-example.min.css" rel="external nofollow" type="text/css">
+  <link rel="stylesheet" href="docs/css/prettify.min.css" rel="external nofollow" type="text/css">
+  <script type="text/javascript" src="docs/js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="docs/js/bootstrap-3.3.2.min.js"></script>
+  <script type="text/javascript" src="docs/js/prettify.min.js"></script>
+  <link rel="stylesheet" href="dist/css/bootstrap-multiselect.css" rel="external nofollow" type="text/css">
+  <script type="text/javascript" src="dist/js/bootstrap-multiselect.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      window.prettyPrint() && prettyPrint();
+    });
+    // 插件实例
+    $(document).ready(function () {
+      $("#example-getting-started").multiselect();
+      // 点击事件获取所有选中option的value值
+      $("#btn").click(function () {
+        var selectValueStr = [];
+        $("#example-getting-started option:selected").each(function () {
+          selectValueStr.push($(this).val());
+        })
+        console.log(selectValueStr)
+      })
+    });
+  </script>
+</head>
+ 
+<body>
+  <button id="btn">获取选中得option中value值</button>
+  <select id="example-getting-started" multiple="multiple">
+    <option value="cheese">Cheese</option>
+    <option value="tomatoes">Tomatoes</option>
+    <option value="Mozzarella">Mozzarella</option>
+    <option value="Mushrooms">Mushrooms</option>
+    <option value="Pepperoni">Pepperoni</option>
+    <option value="Onions">Onions</option>
+  </select>
+</body>
+ 
+</html>
